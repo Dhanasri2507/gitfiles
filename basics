@@ -1,0 +1,623 @@
+1.TWO NUMBERS ARE EQUAL
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("num1");
+        int a=sc .nextInt();
+        System.out.println("num2");
+        int b=sc .nextInt();
+        if(a==b){
+            System.out.println(a+" "+b+" are equal");
+        }
+        else{
+            System.out.println(" are not equal");
+        }
+    }
+}
+
+
+2.EVEN OR ODD
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("num");
+	    int a=sc.nextInt();
+	    if(a%2==0){
+	        System.out.println("a is even number");
+	    }
+	    else{
+	        System.out.println(a + " is an odd number");
+	    }
+	}
+}
+
+
+3.POSITIVE OR NEGATIVE
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("num");
+    int a=sc.nextInt();
+    if(a>=0){
+        System.out.println(a+" is positive number");
+    }
+    else
+        System.out.println(a+" is negative number");
+    }
+}
+
+
+4.LEAP YEAR
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("year");
+        int year=sc.nextInt();
+        if(year%4==0||year%400==0&&year%100!=0){
+            System.out.println(year+" is a leap year");
+        }
+        else{
+            System.out.println(year+" is not a leap year");
+        }
+    }
+}
+
+5.ELIGIBLE FOR VOTE
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("age");
+    int age=sc.nextInt();
+    if(age>=18){
+        System.out.println("eligible");
+    }
+    else
+        System.out.println("not eligible");
+    }
+}
+
+
+6.
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("num: ");
+        int m=sc.nextInt();
+        if(m>=0){
+            System.out.println("n = 0");
+        }
+        if(m<0){
+            System.out.println("n = -1");
+        }
+    }
+}
+
+
+7.HEIGHT
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("age");
+        int age=sc.nextInt();
+        if(age<=150){
+            System.out.println("dwarf");
+        }
+        else if(age>150&&age<=170){
+            System.out.println("normal");
+        }
+        else if(age>170){
+            System.out.println("tall");
+        }
+    }
+}
+
+
+8.GREATEST OF 3 NUMBERS
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("a");
+        int a=sc.nextInt();
+        System.out.println("b");
+        int b=sc.nextInt();
+        System.out.println("c");
+        int c=sc.nextInt();
+        if(a>b&&a>c){
+            System.out.println("a is greatest");
+        }
+        else if(b>a&&b>c){
+            System.out.println("b is greatest");
+        }
+        else if(c>a&&c>b){
+            System.out.println("c is greatest");
+        }
+    }
+}
+
+
+
+9.QUADRANT SYSTEM
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("number1: ");
+        int n1=sc.nextInt();
+        System.out.print("number2: ");
+        int n2=sc.nextInt();
+        if(n1>=0&&n2>=0){
+            System.out.print("1st quadrant");
+        }
+        else if(n1<0&&n2>=0){
+            System.out.print("2nd quadrant");
+        }
+        else if(n1<0&&n2<0){
+            System.out.print("3rd quadrant");
+        }
+    }
+}
+
+
+10.ELIGIBLE FOR ADMISSION
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+    int maths=72;
+    int physics=65;
+    int chemistry=51;
+    int mathsphysics=137;
+    int total=188;
+    if(maths>=65&&physics>=55&&chemistry>=50&&total>=190){
+        System.out.print("eligible for admission");}
+    else{
+        System.out.print("not eligible for admission");}
+    }
+}
+
+
+12.PERCENTAGE AND DIVISION
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("rollno:");
+        int rollno=sc.nextInt();
+        System.out.print("name:");
+        String name=sc.next();
+        System.out.print("mark in physics:");
+        int physics=sc.nextInt();
+        System.out.print("mark in chemistry:");
+        int chemistry=sc.nextInt();
+        System.out.print("mark in CA:");
+        int CA=sc.nextInt();
+        int total=physics+chemistry+CA;
+        System.out.print("total marks = "+total);
+        float percentage=total/3;
+        System.out.println("percentage = "+percentage);
+        if(percentage>=60){
+            System.out.println("division = first");
+        }
+        else if (percentage<60&&percentage>=45){
+            System.out.println("division = second");
+        }
+        else if(percentage<45){
+            System.out.println("division = third");
+        }
+    }
+}
+
+
+13.WEATHER TEMPERATURE
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("temperature: ");
+        int temp=sc.nextInt();
+        if(temp<0){
+            System.out.print("freezing weather");
+        }
+        else if(temp>0&&temp<10){
+            System.out.print("very cold weather");
+        }
+        else if(temp>=10&&temp<20){
+            System.out.print("cold weather");
+        }
+        else if(temp>=20&&temp<30){
+            System.out.print("normal weather");
+        }
+        else if(temp>=30&&temp<40){
+            System.out.print("hot weather");
+        }
+        else if(temp>=40){
+            System.out.print("very hot weather");
+        }
+    }
+}
+
+
+
+14.EQUILATERAL,ISOSCELES,SCALENE
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("side1: ");
+        int s1=sc.nextInt();
+        System.out.print("side2: ");
+        int s2=sc.nextInt();
+        System.out.print("side3: ");
+        int s3=sc.nextInt();
+        if(s1==s2&&s2==s3&&s3==s1){
+            System.out.print("equilateral");
+        }
+        else if((s1==s2||s1==s3||s2==s3)){
+            System.out.print("isosceles");
+        }
+        else if(s1!=s2&&s1!=s3&&s3!=s2){
+            System.out.print("scalene");
+        }
+    }
+}
+
+
+15.TRIANGLE VALID OR NOT
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("side1: ");
+        int s1=sc.nextInt();
+        System.out.print("side2: ");
+        int s2=sc.nextInt();
+        System.out.print("side3: ");
+        int s3=sc.nextInt();
+        if((s1+s2+s3)==180){
+            System.out.print("valid for triangle");
+        }
+        else{
+            System.out.print("invalid for triangle");
+        }
+    }
+}
+
+
+16.SPCL CHARACTER OR ALPHA OR DIGIT
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter Character: ");
+        char ab=sc.next().charAt(0);
+        if((ab>'a'&&ab<'z')||(ab>'A'&&ab<'Z')){
+            System.out.print("alphabet");
+        }
+        else if(ab>'0'&&ab<'9'){
+            System.out.print("digit");
+        }
+        else{
+            System.out.print("special Character");
+        }
+    }
+}
+
+
+17.VOWELS OR CONSTANT
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter alphabet: ");
+        char alpha=sc.next().charAt(0);
+        if(alpha=='a'||alpha=='e'||alpha=='i'||alpha=='o'||alpha=='u'||alpha=='A'||alpha=='E'||alpha=='I'||alpha=='O'||alpha=='U'){
+            System.out.print("vowels");
+        }
+        else{
+            System.out.print("constant");
+        }
+    }
+}
+
+
+18.PROFIT,LOSS ON TRANSACTION
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("costprice: ");
+        int cp=sc.nextInt();
+        System.out.print("sellingprice: ");
+        int sp=sc.nextInt();
+        int profit=(sp-cp);
+        System.out.print("booked a profit: "+profit);
+    }
+}
+
+
+19. ELECTRICITY BILL
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("customer id: ");
+        int id=sc.nextInt();
+        System.out.print("name:" );
+        String name=sc.next();
+        System.out.print("unit: ");
+        int unit=sc.nextInt();
+        if(unit<=199){
+            double amt = unit*1.20;
+            double sur = amt*0.15;
+            double tot = amt+sur;
+            System.out.println("amount = "+amt);
+            System.out.println("surcharge= "+sur);
+            System.out.println("total = "+tot);
+        }
+        else if(unit>=200&&unit<400){
+            double amt = unit*1.50;
+            double sur = amt*0.15;
+            double tot = amt+sur;
+            System.out.println("amount = "+amt);
+            System.out.println("surcharge= "+sur);
+            System.out.println("total = "+tot);
+        }
+        else if(unit>=400&&unit<600){
+            double amt = unit*1.80;
+            double sur = amt*0.15;
+            double tot = amt+sur;
+            System.out.println("amount = "+amt);
+            System.out.println("surcharge= "+sur);
+            System.out.println("total = "+tot);
+        }
+        else if(unit>=600){
+            double amt = unit*2.00;
+          double sur = amt*0.15;
+            double tot = amt+sur;
+            System.out.println("amount = "+amt);
+            System.out.println("surcharge= "+sur);
+            System.out.println("total = "+tot);
+        }
+    }
+}
+
+
+20.GRADE SYSTEM
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new  Scanner(System.in);
+        System.out.print("enter grade: ");
+        char grade=sc.next().charAt(0);
+        if(grade=='E'){
+            System.out.print("excellent");
+        }
+        else if(grade=='V'){
+            System.out.print("very good");
+        }
+        else if(grade=='G'){
+            System.out.print("good");
+        }
+        else if(grade=='A'){
+            System.out.print("average");
+        }
+        else if(grade=='F'){
+            System.out.print("fail");
+        }
+    }
+}
+
+
+21.DIGIT AND DAYNAME
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("num:");
+        int number=sc.nextInt();
+        if(number==1){
+            System.out.print("monday");
+        }
+        else if(number==2){
+            System.out.print("tuesday");
+        }
+        else if(number==3){
+            System.out.print("wednesday");
+        }
+        else if(number==4){
+            System.out.print("thursday");
+        }
+        else if(number==5){
+            System.out.print("friday");
+        }
+        else if(number==6){
+            System.out.print("saturday");
+        }
+        else if(number==7){
+            System.out.print("sunday");
+        }
+    }
+}
+
+
+22.NUMBER IN THE WORDS
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("number:");
+        int num=sc.nextInt();
+        if(num==0){
+            System.out.print("zero");
+        }
+        else if(num==1)
+        {
+            System.out.print("one");
+        }
+        else if(num==2){
+            System.out.print("two");
+        }
+        else if(num==3){
+            System.out.print("three");
+        }
+        else if(num==4){
+            System.out.print("four");
+        }
+        else if(num==5){
+            System.out.print("five");
+        }
+        else if(num==6){
+            System.out.print("six");
+        }
+    }
+}
+
+
+23.NUMBER AND MONTH
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("number:");
+        int num=sc.nextInt();
+        if(num==1){
+            System.out.print("january");
+        }
+        else if(num==2){
+            System.out.print("february");
+        }
+        else if(num==3){
+            System.out.print("march");
+        }
+        else if(num==4){
+            System.out.print("april");
+        }
+        else if(num==5){
+            System.out.print("may");
+        }
+        else if(num==6){
+            System.out.print("june");
+        }
+    }
+}
+
+
+24.MONTH AND NO OF DAYS
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("number: ");
+        int num=sc.nextInt();
+        if(num==1){
+            System.out.print("month have 31 days");
+        }
+        else if(num==2){
+            System.out.print("month have 29 days");
+        }
+         else if(num==3){
+            System.out.print("month have 31 days");
+        }
+        else if(num==4){
+            System.out.print("month have 30 days");
+        }
+        else if(num==5){
+            System.out.print("month have 31 days");
+        }
+        else if(num==6){
+            System.out.print("month have 30 days");
+        }
+        else if(num==7){
+            System.out.print("month have 31 days");
+        }
+        else if(num==8){
+            System.out.print("month have 31 days");
+        }
+        else if(num==9){
+            System.out.print("month have 30 days");
+        }
+        else if(num==10){
+            System.out.print("month have 31 days");
+        }
+        else if(num==11){
+            System.out.print("month have 30 days");
+        }
+        else if(num==12){
+            System.out.print("month have 31 days");
+        }
+    }
+}
+
+
+25.AREA OF CIR,REC,TRI
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("1.area of circle");
+        System.out.println("2.area of rectangle");
+        System.out.println("3.area of triangle");
+        System.out.print("enter choice: ");
+        int num =sc.nextInt();
+        if(num==1){
+            System.out.print("enter pi value: ");
+            Double pi=sc.nextDouble();
+            System.out.print("enter r value: ");
+            Double r=sc.nextDouble();
+            System.out.print("area of circle = "+(pi*r*r));
+        }
+        else if(num==2){
+            System.out.print("enter l value: ");
+            Double l=sc.nextDouble();
+            System.out.print("enter w value: ");
+            Double w=sc.nextDouble();
+            System.out.print("area of rectangle = "+(l*w));
+        }
+        else if(num==3){
+            System.out.print("enter base value: ");
+            Double base=sc.nextDouble();
+            System.out.print("enter height value: ");
+            Double height=sc.nextDouble();
+            System.out.print("area of triangle = "+((base*height)/2));
+        }
+    }
+}
+
+
+26.ADD,SUB,MUL,DIV
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter 1st integer: ");
+        int num1=sc.nextInt();
+        System.out.print("enter 2nd integer: ");
+        int num2=sc.nextInt();
+        System.out.println("1.addition");
+        System.out.println("2.subtraction");
+        System.out.println("3.mulplication");
+        System.out.println("4.divition");
+        System.out.print("enter option: ");
+        int num=sc.nextInt();
+        if(num==1){
+            System.out.print("addition of numbers = "+(num1+num2));
+        }
+        else if(num==2){
+            System.out.print("subtraction of numbers = "+(num1-num2));
+        }
+        else if(num==3){
+            System.out.print("mulplication of numbers = "+(num1*num2));
+        }
+        else if(num==4){
+            System.out.print("division of numbers = "+(num1/num2));
+        }
+    }
+}
